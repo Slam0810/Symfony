@@ -1,0 +1,15 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+home:
+    path: /home
+    controller: App\Controller\HelloController::home
+
+new:
+    path: /new
+    controller: App\Controller\FormController::new
+
+tableau:
+    path: /tableau
+    controller: App\Controller\TableauController::tableau

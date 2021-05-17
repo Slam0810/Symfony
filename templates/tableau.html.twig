@@ -1,0 +1,23 @@
+<div>
+    <h3 class="text-center"> Les membres de la famille TOURE </h3>
+    <table border="solid">
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>Nom</th>
+            <th>Role</th>
+            <th>Date de Naissance</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for famille in familles %}
+            <tr>
+                <td>{{ famille.id }}</td>
+                <td>{{ famille.nom }}</td>
+                <td>{{ famille.Role }}</td>
+                <td>{{ famille.DateNaissance }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
